@@ -1,3 +1,4 @@
+/* Add your custom CSS styles here */
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -7,12 +8,11 @@
 header {
   text-align: center;
   margin-bottom: 20px;
-  background-image: url('how-to-lay-mulch-around-foundation.jpg');
+  background-image: url('header-background.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 40px;
-  height: 50vh; /* Adjust the height as desired */
 }
 
 h1 {
@@ -38,15 +38,21 @@ ul {
 footer {
   text-align: center;
   margin-top: 40px;
-  background-image: url('content-lawn-mowing-stripes.jpg');
+  background-image: url('footer-background.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 40px;
-  height: 50vh; /* Adjust the height as desired */
 }
 
 a {
   color: blue;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+@media (min-width: 768px) {
+  header,
+  footer {
+    height: 50vh; /* Adjust the height as desired */
+  }
 }
