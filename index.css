@@ -1,4 +1,14 @@
 /* Add your custom CSS styles here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -16,18 +26,33 @@ header {
 }
 
 h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-}
-
-section {
+  font-size: 36px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8800;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  background-color: #ff5500;
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 ul {
@@ -45,14 +70,14 @@ footer {
   padding: 40px;
 }
 
-a {
-  color: blue;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+.contact-info {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 768px) {
-  header,
-  footer {
-    height: 50vh; /* Adjust the height as desired */
-  }
+.contact-info:hover {
+  text-decoration: underline;
 }
