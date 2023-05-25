@@ -12,11 +12,13 @@ header {
   background-position: center;
   color: #fff;
   padding: 40px;
+  height: 50vh; /* Adjust the height as desired */
 }
 
 h1 {
   font-size: 28px;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
 
 section {
@@ -41,8 +43,10 @@ footer {
   background-position: center;
   color: #fff;
   padding: 40px;
+  height: 50vh; /* Adjust the height as desired */
 }
 
 a {
   color: blue;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
