@@ -1,44 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transform Your Outdoor Space</title>
   <link rel="stylesheet" href="index.css">
-</head>
+  <style>
+    /* Add your custom CSS styles here */
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .nav-menu {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-menu li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      padding: 0;
+      top: 100%;
+      left: 0;
+      width: 150px;
+    }
+
+    .dropdown-menu li {
+      display: block;
+    }
+
+    .nav-menu li:hover .dropdown-menu {
+      display: block;
+    }
+
+    header {
+      background-image: url('how-to-lay-mulch-around-foundation.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    header h1 {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    header h2 {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #ff5500;
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e64100;
+    }
+
+    .services {
+      background-color: #f5f5f5;
+      padding: 40px 0;
+    }
+
+    .services h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service-item {
+      width: 200px;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .service-item img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+
+    .service-item span {
+      display: block;
+      font-size: 16px;
+    }
+
+    .reviews {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .reviews-slider {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .review {
+      max-width: 400px;
+      background-color: #fff;
+      padding: 30px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .review p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .review .customer-name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      background-image: url('content-lawn-mowing-stripes.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 40px;
+    }
+
+    footer h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: block;
+      margin-bottom: 10px;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
 <body>
   <nav>
-    <div class="container">
-      <ul class="nav-menu">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Window Cleaning</a></li>
-            <li><a href="#">Mowing/Trimming/Landscape Work/Mulching</a></li>
-            <li><a href="#">Gutter Cleaning</a></li>
-            <li><a href="#">Power Washing (Driveways, Decks/Patios, etc.)</a></li>
-            <li><a href="#">Car Washing/Waxing</a></li>
-            <li><a href="#">Wood Cutting and/or Selling</a></li>
-            <li><a href="#">Siding Cleaning</a></li>
-            <li><a href="#">Grill Cleaning</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#testimonials">Testimonials</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li>
+        <a href="#services">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Window Cleaning</a></li>
+          <li><a href="#">Mowing/Trimming/Landscape Work/Mulching</a></li>
+          <li><a href="#">Gutter Cleaning</a></li>
+          <li><a href="#">Power Washing (Driveways, Decks/Patios, etc.)</a></li>
+          <li><a href="#">Car Washing/Waxing</a></li>
+          <li><a href="#">Wood Cutting and/or Selling</a></li>
+          <li><a href="#">Siding Cleaning</a></li>
+          <li><a href="#">Grill Cleaning</a></li>
+        </ul>
+      </li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <header>
+  <header id="home">
     <div class="container">
       <h1>Transform Your Outdoor Space this Summer!</h1>
       <h2>Need a lush, well-manicured lawn? Looking for a fresh, clean home exterior? Look no further! I offer a wide range of professional services to beautify and maintain your property.</h2>
@@ -46,31 +230,71 @@
     </div>
   </header>
 
-  <section class="services">
+  <section id="services" class="services">
     <div class="container">
       <h2>My Services</h2>
       <ul>
-        <li>Window Cleaning</li>
-        <li>Mowing/Trimming/Landscape Work/Mulching</li>
-        <li>Gutter Cleaning</li>
-        <li>Power Washing (Driveways, Decks/Patios, etc.)</li>
-        <li>Car Washing/Waxing</li>
-        <li>Wood Cutting and/or Selling</li>
-        <li>Siding Cleaning</li>
-        <li>Grill Cleaning</li>
+        <li>
+          <div class="service-item">
+            <img src="1.jpg" alt="Service 1">
+            <span>Window Cleaning</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="2.png" alt="Service 2">
+            <span>Mowing/Trimming/Landscape Work/Mulching</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="3.PNG" alt="Service 3">
+            <span>Gutter Cleaning</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="4.jpg" alt="Service 4">
+            <span>Power Washing (Driveways, Decks/Patios, etc.)</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="5.png" alt="Service 5">
+            <span>Car Washing/Waxing</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="6.jpg" alt="Service 6">
+            <span>Wood Cutting and/or Selling</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="7.jpg" alt="Service 7">
+            <span>Siding Cleaning</span>
+          </div>
+        </li>
+        <li>
+          <div class="service-item">
+            <img src="8.jpg" alt="Service 8">
+            <span>Grill Cleaning</span>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
 
-  <section class="testimonials">
+  <section id="reviews" class="reviews">
     <div class="container">
-      <h2>What My Customers Say</h2>
-      <div class="testimonial-slider">
-        <div class="testimonial">
+      <h2>Customer Reviews</h2>
+      <div class="reviews-slider">
+        <div class="review">
           <p>"I am absolutely thrilled with how clean the windows are! He is also a very nice young man."</p>
           <p class="customer-name">- Emily, Cedar Rapids</p>
         </div>
-        <div class="testimonial">
+        <div class="review">
           <p>"I highly recommend Nate! He exceeded my expectations and made my lawn look stunning."</p>
           <p class="customer-name">- Mike, Marion</p>
         </div>
@@ -82,11 +306,7 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>Ready to transform your outdoor space? Contact me today for a free quote!</p>
-      <a href="tel:123-456-7890" class="contact-info">(319)241-6281</a>
+      <a href="tel:123-456-7890" class="contact-info">(319) 241-6281</a>
       <a href="mailto:info@example.com" class="contact-info">natewillimack@gmail.com</a>
     </div>
   </footer>
-
-</body>
-
-</html>
