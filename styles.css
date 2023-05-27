@@ -1,197 +1,161 @@
-/* Add your custom CSS styles here */
+/* styles.css */
+
+/* Reset styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  line-height: 1.5;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
+/* Navigation styles */
 nav {
   background-color: #333;
   color: #fff;
 }
 
 .nav-menu {
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .nav-menu li {
-  position: relative;
+  list-style: none;
 }
 
 .nav-menu a {
-  display: block;
-  padding: 10px 20px;
   color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
   display: none;
-}
-
-.dropdown-menu li {
-  width: 100%;
-}
-
-.dropdown-menu a {
-  padding: 10px 20px;
+  position: absolute;
+  background-color: #555;
+  padding: 10px;
 }
 
 .nav-menu li:hover .dropdown-menu {
   display: block;
 }
 
-header {
-  background-image: url('how-to-lay-mulch-around-foundation.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 80px 0;
+.dropdown-menu li {
+  padding: 5px 0;
 }
 
-header h1 {
-  font-size: 40px;
-  line-height: 1.2;
+/* Header styles */
+header {
+  background-image: url(content-lawn-mowing-stripes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-header h2 {
-  font-size: 24px;
-  line-height: 1.5;
+h2 {
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #ff5500;
+  padding: 12px 24px;
+  background-color: #333;
   color: #fff;
-  padding: 12px 30px;
-  font-size: 18px;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
-.cta-button:hover {
-  background-color: #e64100;
-}
-
+/* Services section styles */
 .services {
-  background-color: #f5f5f5;
-  padding: 40px 0;
-}
-
-.services h2 {
-  font-size: 32px;
+  padding: 80px 0;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .services-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
+  margin-top: 40px;
+  list-style: none;
 }
 
 .service-item {
+  flex-basis: 300px;
+  margin: 20px;
   text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
 }
 
-.service-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 5px;
+.service-image {
   margin-bottom: 10px;
 }
 
-.service-item span {
-  font-size: 14px;
-  font-weight: bold;
+.service-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.service-item:hover {
-  transform: scale(1.1);
-}
-
+/* Reviews section styles */
 .reviews {
+  background-color: #f5f5f5;
+  padding: 80px 0;
   text-align: center;
-  padding: 40px 0;
 }
 
-.reviews-slider {
+.review-slider {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .review {
-  max-width: 400px;
-  background-color: #fff;
-  padding: 30px;
-  margin: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.review p {
-  font-size: 16px;
-  margin-bottom: 10px;
+.customer-name {
+  margin-top: 10px;
 }
 
-.review .customer-name {
-  font-size: 14px;
-  font-weight: bold;
-  color: #666;
-}
-
-.review:hover {
-  transform: scale(1.05);
-}
-
-footer {
-  text-align: center;
-  margin-top: 40px;
-  background-image: url('content-lawn-mowing-stripes.jpg');
+/* Contact section styles */
+#contact {
+  background-image: url(how-to-lay-mulch-around-foundation.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 80px 0;
   color: #fff;
-  padding: 40px;
+  text-align: center;
 }
 
-footer h2 {
-  font-size: 32px;
+h2 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-footer p {
+p {
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -201,5 +165,28 @@ footer p {
   margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .service-item {
+    flex-basis: 200px;
+  }
 }
