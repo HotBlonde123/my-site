@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transform Your Outdoor Space</title>
-  <link rel="stylesheet" href="index.css">
   <style>
     /* Add your custom CSS styles here */
     * {
@@ -33,32 +32,31 @@
       list-style-type: none;
       display: flex;
       justify-content: space-between;
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     .nav-menu li {
       position: relative;
     }
 
-    .nav-menu a {
+    .nav-menu li a {
       color: #fff;
       text-decoration: none;
       padding: 10px;
     }
 
-    .dropdown-menu {
+    .nav-menu .dropdown-menu {
       display: none;
       position: absolute;
       background-color: #333;
-      padding: 0;
       top: 100%;
       left: 0;
-      width: 150px;
+      padding: 10px;
     }
 
-    .dropdown-menu li {
-      display: block;
+    .nav-menu .dropdown-menu li {
+      margin-bottom: 5px;
     }
 
     .nav-menu li:hover .dropdown-menu {
@@ -114,29 +112,32 @@
 
     .services ul {
       list-style-type: none;
-      margin: 0;
-      padding: 0;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 0;
     }
 
     .service-item {
-      width: 200px;
-      text-align: center;
-      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .service-item img {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 10px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
+      margin-bottom: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
     }
 
     .service-item span {
-      display: block;
-      font-size: 16px;
+      text-align: center;
+    }
+
+    .service-item:hover img {
+      transform: scale(1.1);
     }
 
     .reviews {
@@ -202,27 +203,29 @@
 </head>
 <body>
   <nav>
-    <ul class="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li>
-        <a href="#services">Services</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Window Cleaning</a></li>
-          <li><a href="#">Mowing/Trimming/Landscape Work/Mulching</a></li>
-          <li><a href="#">Gutter Cleaning</a></li>
-          <li><a href="#">Power Washing (Driveways, Decks/Patios, etc.)</a></li>
-          <li><a href="#">Car Washing/Waxing</a></li>
-          <li><a href="#">Wood Cutting and/or Selling</a></li>
-          <li><a href="#">Siding Cleaning</a></li>
-          <li><a href="#">Grill Cleaning</a></li>
-        </ul>
-      </li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Window Cleaning</a></li>
+            <li><a href="#">Mowing/Trimming/Landscape Work/Mulching</a></li>
+            <li><a href="#">Gutter Cleaning</a></li>
+            <li><a href="#">Power Washing (Driveways, Decks/Patios, etc.)</a></li>
+            <li><a href="#">Car Washing/Waxing</a></li>
+            <li><a href="#">Wood Cutting and/or Selling</a></li>
+            <li><a href="#">Siding Cleaning</a></li>
+            <li><a href="#">Grill Cleaning</a></li>
+          </ul>
+        </li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <header id="home">
+  <header>
     <div class="container">
       <h1>Transform Your Outdoor Space this Summer!</h1>
       <h2>Need a lush, well-manicured lawn? Looking for a fresh, clean home exterior? Look no further! I offer a wide range of professional services to beautify and maintain your property.</h2>
@@ -230,55 +233,55 @@
     </div>
   </header>
 
-  <section id="services" class="services">
+  <section class="services">
     <div class="container">
       <h2>My Services</h2>
-      <ul>
+      <ul class="services-list">
         <li>
           <div class="service-item">
-            <img src="1.jpg" alt="Service 1">
+            <img src="your-image-url-1.jpg" alt="Service 1">
             <span>Window Cleaning</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="2.png" alt="Service 2">
+            <img src="your-image-url-2.jpg" alt="Service 2">
             <span>Mowing/Trimming/Landscape Work/Mulching</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="3.PNG" alt="Service 3">
+            <img src="your-image-url-3.jpg" alt="Service 3">
             <span>Gutter Cleaning</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="4.jpg" alt="Service 4">
+            <img src="your-image-url-4.jpg" alt="Service 4">
             <span>Power Washing (Driveways, Decks/Patios, etc.)</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="5.png" alt="Service 5">
+            <img src="your-image-url-5.jpg" alt="Service 5">
             <span>Car Washing/Waxing</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="6.jpg" alt="Service 6">
+            <img src="your-image-url-6.jpg" alt="Service 6">
             <span>Wood Cutting and/or Selling</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="7.jpg" alt="Service 7">
+            <img src="your-image-url-7.jpg" alt="Service 7">
             <span>Siding Cleaning</span>
           </div>
         </li>
         <li>
           <div class="service-item">
-            <img src="8.jpg" alt="Service 8">
+            <img src="your-image-url-8.jpg" alt="Service 8">
             <span>Grill Cleaning</span>
           </div>
         </li>
@@ -286,7 +289,7 @@
     </div>
   </section>
 
-  <section id="reviews" class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <h2>Customer Reviews</h2>
       <div class="reviews-slider">
@@ -310,3 +313,9 @@
       <a href="mailto:info@example.com" class="contact-info">natewillimack@gmail.com</a>
     </div>
   </footer>
+
+  <script>
+    // Add your custom JavaScript here
+  </script>
+</body>
+</html>
