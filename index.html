@@ -4,202 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transform Your Outdoor Space</title>
-  <style>
-    /* Add your custom CSS styles here */
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    nav {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-    }
-
-    .nav-menu {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-menu li {
-      position: relative;
-    }
-
-    .nav-menu li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-    }
-
-    .nav-menu .dropdown-menu {
-      display: none;
-      position: absolute;
-      background-color: #333;
-      top: 100%;
-      left: 0;
-      padding: 10px;
-    }
-
-    .nav-menu .dropdown-menu li {
-      margin-bottom: 5px;
-    }
-
-    .nav-menu li:hover .dropdown-menu {
-      display: block;
-    }
-
-    header {
-      background-image: url('how-to-lay-mulch-around-foundation.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
-      padding: 80px 0;
-    }
-
-    header h1 {
-      font-size: 40px;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-
-    header h2 {
-      font-size: 24px;
-      line-height: 1.5;
-      margin-bottom: 40px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #ff5500;
-      color: #fff;
-      padding: 12px 30px;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #e64100;
-    }
-
-    .services {
-      background-color: #f5f5f5;
-      padding: 40px 0;
-    }
-
-    .services h2 {
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .services ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      padding: 0;
-    }
-
-    .service-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .service-item img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .service-item span {
-      text-align: center;
-    }
-
-    .service-item:hover img {
-      transform: scale(1.1);
-    }
-
-    .reviews {
-      text-align: center;
-      padding: 40px 0;
-    }
-
-    .reviews-slider {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .review {
-      max-width: 400px;
-      background-color: #fff;
-      padding: 30px;
-      margin: 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .review p {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .review .customer-name {
-      font-size: 14px;
-      font-weight: bold;
-      color: #666;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      background-image: url('content-lawn-mowing-stripes.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 40px;
-    }
-
-    footer h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    footer p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .contact-info {
-      display: block;
-      margin-bottom: 10px;
-      color: #fff;
-      text-decoration: none;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <nav>
@@ -219,8 +24,8 @@
             <li><a href="#">Grill Cleaning</a></li>
           </ul>
         </li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -237,62 +42,62 @@
     <div class="container">
       <h2>My Services</h2>
       <ul class="services-list">
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-1.jpg" alt="Service 1">
-            <span>Window Cleaning</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-1.jpg" alt="Window Cleaning">
           </div>
+          <span>Window Cleaning</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-2.png" alt="Service 2">
-            <span>Mowing/Trimming/Landscape Work/Mulching</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-2.png" alt="Mowing/Trimming/Landscape Work/Mulching">
           </div>
+          <span>Mowing/Trimming/Landscape Work/Mulching</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-3.PNG" alt="Service 3">
-            <span>Gutter Cleaning</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-3.PNG" alt="Gutter Cleaning">
           </div>
+          <span>Gutter Cleaning</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-4.jpg" alt="Service 4">
-            <span>Power Washing (Driveways, Decks/Patios, etc.)</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-4.jpg" alt="Power Washing (Driveways, Decks/Patios, etc.)">
           </div>
+          <span>Power Washing</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-5.png" alt="Service 5">
-            <span>Car Washing/Waxing</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-5.png" alt="Car Washing/Waxing">
           </div>
+          <span>Car Washing/Waxing</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-6.jpg" alt="Service 6">
-            <span>Wood Cutting and/or Selling</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-6.jpg" alt="Wood Cutting and/or Selling">
           </div>
+          <span>Wood Cutting and/or Selling</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-7.jpg" alt="Service 7">
-            <span>Siding Cleaning</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-7.jpg" alt="Siding Cleaning">
           </div>
+          <span>Siding Cleaning</span>
         </li>
-        <li>
-          <div class="service-item">
-            <img src="your-image-url-8.jpg" alt="Service 8">
-            <span>Grill Cleaning</span>
+        <li class="service-item">
+          <div class="service-image">
+            <img src="your-image-url-8.jpg" alt="Grill Cleaning">
           </div>
+          <span>Grill Cleaning</span>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="reviews" id="reviews">
+  <section id="reviews" class="reviews">
     <div class="container">
       <h2>Customer Reviews</h2>
-      <div class="reviews-slider">
+      <div class="review-slider">
         <div class="review">
           <p>"I am absolutely thrilled with how clean the windows are! He is also a very nice young man."</p>
           <p class="customer-name">- Emily, Cedar Rapids</p>
@@ -309,13 +114,10 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>Ready to transform your outdoor space? Contact me today for a free quote!</p>
-      <a href="tel:123-456-7890" class="contact-info">(319) 241-6281</a>
+      <a href="tel:123-456-7890" class="contact-info">(319)241-6281</a>
       <a href="mailto:info@example.com" class="contact-info">natewillimack@gmail.com</a>
     </div>
   </footer>
 
-  <script>
-    // Add your custom JavaScript here
-  </script>
 </body>
 </html>
